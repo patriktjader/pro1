@@ -1,0 +1,40 @@
+style {
+body {
+
+  background-color: grey;
+  background-image: url('Bilder/1 (2).jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: red;
+  background-color: black;
+}
+
+table {
+  color: orangered;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+}
+
+
+
