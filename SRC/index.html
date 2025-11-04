@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>My gaming progression</title>
+</head>
+
+<body>
+    <h1><b>My gaming progression</b></h1>
+    <p></p>
+
+    <h2>Introduction</h2>
+    <p>Gaming has been apart of my life ever since i went to the library in my grandpa's village for the first time while there visiting,<br>
+    and some dirtbag teenagers had brought cs1.5 with them and were 2v2ing to see who was the best, ofcourse me and my brother were instantly intrigued.<br>
+    We watched them play for hours, captivated by the fast-paced action and ofcourse we pesterd them to let us play. It was a whole new world for us, and we wanted to be a part of it.</p>
+
+    <h2>Early Years</h2>
+     <p>Since that first adrenaline rush back at my grandpa's village, my gaming journey has evolved significantly.<br>
+        My first hurdle was to trick my parents to let us play those "violent" games but thrue sheer willpower and preseverance we managed to convince them.<br>
+        I started out with counterstrike 1.6 and later moved on to cs source, but then cirka 2006 i started to overhear my older brothers friends talking about a game.
+        ofcourse since i was the younger brother i wanted to know what they were talking about in came what would turn out to be my biggest obsession and my most beloved game.<br>
+    </p>
+<div class="wow-title">World of warcraft</div>
+
+<script>
+    const wowTitle = document.querySelector('.wow-title');
+
+    //scroll detector
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                wowTitle.classList.add('show');
+                observer.unobserve(wowTitle);
+            }
+        });
+    }, {
+        threshold: 0.5 });
+
+    observer.observe(wowTitle);
+</script>
+
+    </body>
+</html>

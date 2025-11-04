@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+
+body {
+  background-color: red;
+  background-image: url("../Bilder/bakgrund.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: red;
+  background-color: black;
+
+}
+body {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: black;
+  background-color: white;
+}
+h2 {
+  text-align: center;
+  color: #ffcc00;
+  margin-top: 40px;
+}
+.wow-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #f0c83b;
+  text-shadow: 0 0 10px #ffcc00, 0 0 #ffaa00, 0 0 40px #ff8800;
+  font-family: 'Cinzel Decorative', serif;
+  animation: glowPulse 2s infinite alternate;
+
+  margin-top: 20px;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.wow-title.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 
+    0 0 5px #ffcc00,
+    0 0 10px #ffaa00,
+    0 0 20px #ff8800;
+  }
+  100% {
+    text-shadow: 
+  0 0 20px #ffcc00,
+  0 0 30px #ffaa00,
+  0 0 40px #ff8800;
+  }
+}
