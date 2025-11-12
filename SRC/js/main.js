@@ -29,3 +29,12 @@ if (revealBtn) {
     }, 2000);
   });
 }
+
+function playUploadedVideo(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const video = document.getElementById('uploaded-video');
+        video.src = URL.createObjectURL(file);
+        video.style.display = 'block';
+    }
+}
