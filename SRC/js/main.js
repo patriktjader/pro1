@@ -33,8 +33,23 @@ if (revealBtn) {
 function playUploadedVideo(event) {
     const file = event.target.files[0];
     if (file) {
-        const video = document.getElementById('uploaded-video');
+        const video = document.getElementById('upload-video');
         video.src = URL.createObjectURL(file);
         video.style.display = 'block';
     }
+}
+
+function downloadSelectedVideo() {
+  const selectElement = document.getElementById('download-select');
+  const videoPath = selectElement.value;
+  if (videoPath) {
+    const link = document.createElement('a');
+    link.href = videoPath;
+    link.download = videoPath.split('/').pop();
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  } else {
+    alert('Select a video');
+  }
 }

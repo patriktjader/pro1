@@ -23,9 +23,13 @@
             <div class="video-bg">
                 <video class="my-video" controls>
                     <source src="videos/web.mp4" type="video/mp4">
-                    </video>
+                </video>
                 </div>
             </div>
+
+       
+
+
             <!-- YOUTUBE VIDEO -->
 <div class="content-wrapper">
     <div class="video-box">
@@ -50,11 +54,19 @@
     </div>
 </div>
 
-<div class="upload-section">
-    <label for="video-upload" class="upload-button">Upload Your Own Video</label>
+
+        <!--download video-->
+<div class="upload-download">
+    <label for="video-upload" class="upload-button">Upload your video</label>
     <input type="file" accept="video/*" id="video-upload" style="display: none;" onchange="playUploadedVideo(event)">
+
+    <select id="download-select" class="download-select">
+        <option value="">Select a video to download</option>
+        <option value="videos/web.mp4">Cod Highlights</option>
+    </select>
+    <button onclick="downloadSelectedVideo()" class="download-button">Download</button>
 </div>
-<video id="uploaded-video" controls style="display: none; max-width: 90%; margin-top: 20px;"></video>
+<video id="upload-video" controls style="display: none; max-width: 70%; margin-top: 20px;"></video>
 
 <!-- JS-IMPORT DONT TOUCH -->
     <script src="./js/main.js"></script>

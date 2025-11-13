@@ -15,6 +15,7 @@
     border-radius: 0 0 15px 15px;
 }
 
+
 .navbar a {
     color: gold;
     text-decoration :none;
@@ -38,24 +39,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Cinzel", serif;
-    background: radial-gradient(circle at top center, #272626 0%, #090b11 90%);
+    background: radial-gradient(circle at top center, #272626 0%, #090b11 70%, #111316 100%);
     color: #e0e0e0;
     text-align: center;
     overflow-x: hidden;
-    min-height: 200vh;
 }
+
 
 body::before {
     content: "";
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 50% 10%, rgba(255, 200, 100, 0.12), transparent 70%);
+    inset: 0;
+    background: radial-gradient(circle at 50% 10%, rgba(255, 200, 100, 0.10), transparent 70%);
     pointer-events: none;
     z-index: 0;
 }
+
 html, body {
     height: 100%;
 }
@@ -73,7 +72,7 @@ h1 {
     -0 0 15px,
     0 0 10px;
     box-shadow: 
-    inset 5px 5px 10px #ff8c00,
+    inset 5px 5px 10px #ffaa00,
     inset -5px -5px 10px #ff8c00;
     display:inline-block;
     font-size:bold;
@@ -210,28 +209,104 @@ p {
     left: +200; 
 }
 
-.upload-section {
-    text-align: center;
-    margin-top: 40px;
-}
+
 
 .upload-button {
-    background-color: #ff8c00;
-    color: #f30000;
-    font-family:knewave;
-    font-size: larger;
+    background: #ffb347;
+    padding: 12px 30px;
+    border-radius: 12px;
     border: none;
-    padding: 15px 30px;
-    font-size: 1.1em;
+    color:#ffd700;
+    font-family:knewave;
+    font-size:2em;
+    font-weight:bolder;
+    text-shadow:
+    0 0 5px rgb(0, 0, 0),
+    0 0 10px rgb(94, 94, 94),
+    0 0 15px rgb(155, 155, 155);
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 8px;
-    text-shadow: 5 5 10px #ff3c00;
-    box-shadow: 
-    0 4px 6px rgba(240, 1, 1, 0.2),
-    0 0 10px #ff0000;
+    position: relative;
+    transform: translateY(-12px); 
+    box-shadow:
+        0 12px 20px rgba(0,0,0,0.35),
+        0 0 10px rgba(255,200,120,0.4);
+    transition: 0.2s ease;1
 }
 
 .upload-button:hover {
-    background-color: #ff0000;
+    background-color: #fd7200;
+}
+
+
+.download-select {
+    background: #ffb347;
+    padding: 12px 30px;
+    border-radius: 12px;
+    border: none;
+    color:#ffd700;
+    font-family:knewave;
+    font-size:2em;
+    font-weight:bolder;
+    text-shadow:
+    0 0 5px rgb(0, 0, 0),
+    0 0 10px rgb(94, 94, 94),
+    0 0 15px rgb(155, 155, 155);
+    position: relative;
+    transform: translateY(-12px); 
+    box-shadow:
+        0 12px 20px rgba(0,0,0,0.35),
+        0 0 10px rgba(255,200,120,0.4);
+    transition: 0.2s ease;
+
+}
+.download-select:hover {
+    background-color: #e77c01;
+}
+
+.upload-download {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width:fit-content;
+    padding: 40px;
+    margin-top: 20px;
+    background-color: #e68a00;
+    border: 2px solid rgb(61, 61, 61);
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;;
+    box-shadow: 
+        inset 0 10px 25px rgba(0,0,0,0.7),
+        inset 0 -10px 30px rgba(255,255,255,0.20),
+        inset 0 0 20px rgba(255,200,100,0.35);
+        transform: translateY(-10px);
+}
+
+.download-button {
+    background: #ffb347;
+    position: relative;
+    padding: 12px 30px;
+    border-radius: 12px;
+    border: none;
+    color:#ffd700;
+    font-family:knewave;
+    font-size:2em;
+    font-weight:bolder;
+    text-shadow:
+    0 0 5px rgb(0, 0, 0),
+    0 0 10px rgb(94, 94, 94),
+    0 0 15px rgb(155, 155, 155);
+    position: relative;
+    transform: translateY(-12px); 
+    box-shadow:
+        0 12px 20px rgba(0,0,0,0.35),
+        0 0 10px rgba(255,200,120,0.4);
+    transition: 0.2s ease;
+    z-index: 10;
+}
+
+.download-button:hover {
+    background-color: #e77c01;
 }
