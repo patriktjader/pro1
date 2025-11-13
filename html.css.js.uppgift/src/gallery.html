@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <title>My gaming progression</title>
+</head>
+<body>
+    <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="wow.html">My Bio</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<h1>My highlights</h1>
+
+        <p>Here you can find some of my favorite clips spanning atleast 5 years of my gaming career</p>
+
+
+        <div class="video-border">
+            <div class="video-bg">
+                <video class="my-video" controls>
+                    <source src="videos/web.mp4" type="video/mp4">
+                </video>
+                </div>
+            </div>
+
+       
+
+
+            <!-- YOUTUBE VIDEO -->
+<div class="content-wrapper">
+    <div class="video-box">
+        <div class="video-inner">
+            <iframe
+                class="video-frame" width="900" height="500"
+                src="https://www.youtube.com/embed/vEhlmRevmC8?si=NMJNbhXSd1s3kTfb"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div class="text-box">
+        <h2>GAMING</h2>
+        <p>
+            Whether it's wipeday on DayZ, camo grinding on a new CoD, 
+            or grinding PvP on WoW, I'm always in. 
+        </p>
+    </div>
+</div>
+
+
+        <!--download video-->
+<div class="upload-download">
+    <label for="video-upload" class="upload-button">Upload your video</label>
+    <input type="file" accept="video/*" id="video-upload" style="display: none;" onchange="playUploadedVideo(event)">
+
+    <select id="download-select" class="download-select">
+        <option value="">Select a video to download</option>
+        <option value="videos/web.mp4">Cod Highlights</option>
+    </select>
+    <button onclick="downloadSelectedVideo()" class="download-button">Download</button>
+</div>
+<video id="upload-video" controls style="display: none; max-width: 70%; margin-top: 20px;"></video>
+
+<!-- JS-IMPORT DONT TOUCH -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
+
