@@ -1,0 +1,9 @@
+# Ignore all video files
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Ignore video folder
+src/videos/
+videos/
