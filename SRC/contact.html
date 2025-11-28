@@ -1,20 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pro1/src/css/contact.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contact.css" />
     <title>My gaming progression</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="wow.html">My Bio</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html" class="active">Contact</a>
-</nav>
+      <a href="index.html">Home</a>
+      <a href="wow.html">My Bio</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
 
-<h1>Contact</h1>
-<p class="start"></p>
+    <h1>Contact</h1>
+    <h2>My Gaming Stats</h2>
 
-</body>
+    <table class="gold-table">
+      <tr>
+        <th>Game</th>
+        <th>Focus</th>
+        <th>Hours Played</th>
+      </tr>
+      <tr>
+        <td>World of Warcraft</td>
+        <td>PvP / PvE</td>
+        <td>over 2 decades</td>
+      </tr>
+      <tr>
+        <td>DayZ</td>
+        <td>PVP</td>
+        <td>3995h</td>
+      </tr>
+      <tr>
+        <td>Call of Duty</td>
+        <td>Camo Grinding/comp</td>
+        <td>~2000h</td>
+      </tr>
+    </table>
+
+    <p class="start"></p>
+    <form class="contact-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" required></textarea>
+
+      <label class="newsletter">
+        <input type="checkbox" id="news" />
+        <span class="checkmark"></span>
+        Sign Me Up For News!!!
+      </label>
+
+      <button type="submit">Send Message</button>
+      <p class="success">Message sent successfully!</p>
+      <!-- JS-IMPORT DONT TOUCH -->
+      <script src="/js/main.js"></script>
+    </form>
+  </body>
+</html>

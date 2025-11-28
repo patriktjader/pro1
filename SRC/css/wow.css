@@ -1,4 +1,3 @@
-/* FONTS & GLOBAL SETUP */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;700&display=swap');
 
 .navbar {
@@ -6,7 +5,6 @@
   justify-content: center;
   gap: 40px;
 
-  /* Glass effect */
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -19,31 +17,29 @@
   border-radius: 0 0 15px 15px;
 }
 
-
 .navbar a {
-    color: gold;
-    text-decoration :none;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 1.1em;
-    transition: 0,3s ease;
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  transition: 0, 3s ease;
 }
 
 .navbar a:hover {
-    color: orange;
-    text-shadow: 0 0 10px #ffcc00;
+  color: orange;
+  text-shadow: 0 0 10px #ffcc00;
 }
 
 .navbar a.active {
   color: #ffcc00;
-  text-shadow: 0 0 15px #ffd700, 0 0 25px #ff8c00
+  text-shadow: 0 0 15px #ffd700, 0 0 25px #ff8c00;
 }
-
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cinzel", serif;
+  font-family: 'Cinzel', serif;
   background: radial-gradient(circle at top center, #272626 0%, #090b11 90%);
   color: #e0e0e0;
   text-align: center;
@@ -51,7 +47,7 @@ body {
 }
 
 body::before {
-  content: "";
+  content: '';
   position: fixed;
   top: 0;
   left: 0;
@@ -62,7 +58,6 @@ body::before {
   z-index: 0;
 }
 
-
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -70,7 +65,6 @@ body::before {
   position: relative;
   z-index: 1;
 }
-
 
 .hidden {
   opacity: 0;
@@ -85,9 +79,6 @@ body::before {
   pointer-events: auto;
 }
 
-
-
-
 h1 {
   margin-top: 100px;
   margin-bottom: 10px;
@@ -97,7 +88,6 @@ h1 {
   animation: glowPulse 4s ease-in-out infinite;
 }
 
-
 h2 {
   color: #ffd700;
   font-size: 1.8em;
@@ -106,18 +96,14 @@ h2 {
   animation: glowPulse 6s ease-in-out infinite;
 }
 
-
 p {
-  color: #fff566;
-  width: 60%;
-  margin: 20px auto;
-  font-size:large;
+  color: #ffb347;
+  margin: 0 auto;
   line-height: 1.8;
-  text-align: center;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 0 0 8px #efd700;
 }
-
-
 .hidden-section {
   position: relative;
   margin-top: 60px;
@@ -130,13 +116,12 @@ p {
 .wow-scene {
   width: 100%;
   height: 700px;
-  background-image: url("../Bilder/wow.jpg"); 
+  background-image: url('../Bilder/wow.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 12px;
   margin: 20px auto 40px auto;
   box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
-
 
   opacity: 0;
   transform: translateY(40px);
@@ -148,21 +133,16 @@ p {
   transform: translateY(0);
 }
 
-
 .wow-title {
   text-align: center;
   font-weight: bold;
   font-size: 3em;
   color: #ff9f31;
   font-family: 'Cinzel Decorative', serif;
-  text-shadow:
-    0 0 10px #ffcc00,
-    0 0 20px #ffaa00,
-    0 0 40px #ff8800;
+  text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffaa00, 0 0 40px #ff8800;
   animation: glowPulse 6s ease-in-out infinite;
   margin-bottom: 20px;
 }
-
 
 .reveal-button {
   cursor: pointer;
@@ -184,15 +164,12 @@ p {
   box-shadow: 0 0 25px #ffd700;
 }
 
-
 .reveal-button.charging {
   animation: buttonCharge 1s ease-in-out infinite;
   background-color: black;
   color: gold;
   border: 2px solid gold;
 }
-
-
 
 @keyframes buttonCharge {
   0% {
@@ -208,7 +185,6 @@ p {
   }
 }
 
-
 @keyframes glowPulse {
   0% {
     text-shadow: 0 0 15px #ffb347, 0 0 30px #ff8c00;
@@ -221,50 +197,41 @@ p {
   }
 }
 
-
 @media all and (max-width: 750px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-        gap: 10px;
-        border-radius: 15px;
-        margin-top: 10px;
-
-    }
-    .navbar a {
-        font-size: 1.1em;
-        padding: 10px;
-
-    }
-    h1 {
-        font-size: 2.5em;
-
-    }
-    h2 {
-        font-size: 1.8em;
-
-    }
-    p {
-        font-size: 1.2em;
-
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+  .navbar a {
+    font-size: 1.1em;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  p {
+    font-size: 1.2em;
+  }
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.container-center-column {  
-    display:flex;
-    flex-direction: column;
-}
-@media all and (min-width: 750px) {
-
+.container-center-column {
+  display: flex;
+  flex-direction: column;
 }
