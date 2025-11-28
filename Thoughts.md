@@ -9,3 +9,5 @@ another struggle was lining the music up so it started exactly when the reveal o
                                                           "final thoughts"
 
 As my first "big" project all by myself this was extremly fun and a very good learning experience, i cant wait for my next project.
+
+PS there was a video for the first video border but it was to big to push to github so its in the .gitignore
